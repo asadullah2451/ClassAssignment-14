@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fullwebside{
+    width: 1000px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin: auto;
+}
+.menubar{
+    text-align: center;
+    margin: 10px 00;
+}
+.menuubar ul{
+    text-align: center;
+} 
+.menubar ul li{
+    display: inline-block;
+    padding: 10px;
+    background: #48DBFB;
+    cursor: pointer;
+} 
+.menubar ul li:hover{
+    color: #48DBFB;
+    background: white;
+}
+.menubar ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    position: relative;
+} 
+
+.menubar ul li a:hover{
+    color: #48DBFB;
+    background: white;
+}
+.menubar ul li a::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+} 
+.menubar ul li a:hover::before{
+    width: 100%;
+}
+/* ==================
+         banner
+================== */
+.banner{
+    height: 350px;
+    color: white;
+    background: #48DBFB;
+    text-align: center;
+}
+.banner p{
+    display: inline-block;
+    margin: 80px 0 20px 0;
+
+}
+.banner h1{
+    margin-bottom: 20px;
+}
+.banner a{
+    background: white;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 5px;
+    text-decoration:none;
+    font-weight: bold;
+    font-size: 25px;
+    color: gray;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+.banner a img{
+    width: 25px;
+    position: relative;
+    top: 3px;
+    right: 0px;
+}
+
+.banner a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: .4s;
+}
+.banner a:hover::before{
+    background: black;
+    width: 100%;
+    border-radius: 5px;
+}
+/* ====================
+    container
+==================== */
+.container{
+    text-align: center;
+    margin: 100px 00;
+    display: inline-block;
+}
+.images{
+    display: inline-block;
+    margin: 50px 0;
+}
+.image_size{
+    width: 220px;
+    height: 170px;
+    display: inline-block;
+    margin: 5px;
+    overflow: hidden;
+}
+.image_size img{
+    max-width: 100%;
+    transition: 1s;
+    
+}
+.img_1:hover img{
+    transform: rotate(360deg);
+}
+.img_2 img:hover{
+    transform: scale(2);
+}
+.img_3 img:hover{
+    transform: rotate(20deg) scale(1.5);
+}
+.img_4 img:hover{
+    transform: rotate(20deg) scale(1.5);
+}
+.img_5 img:hover{
+    transform: rotate(20deg) scale(1.5);
+}
+.img_6 img{
+    width: 165px;
+}
+.img_6 img:hover{
+    transform: rotate(20deg) scale(1.5);
+}
+.img_7 img:hover{
+    transform: rotate(20deg) scale(1.5);
+}
+.img_8 img:hover{
+    transform: rotate(20deg) scale(1.5);
+}
+.discription{
+    display: inline-block;
+    margin: 50px 10px;
+}
+.discription h2{
+    margin-bottom: 20px;
+}
+.step_1{
+    width: 120px;
+    height: 50px;
+    background: #000;
+    color: white;
+    line-height: 50px;
+    display: inline-block;
+    font-weight: bold;
+    transition: .5s;
+    transform: rotate(-30deg);
+    position: relative;
+    right: 200px;
+}
+.step_1:hover{
+    transform: rotate(0deg);
+    background: #48DBFB;
+}
+.step_2{
+    width: 120px;
+    height: 50px;
+    background: #000;
+    color: white;
+    line-height: 50px;
+    display: inline-block;
+    font-weight: bold;
+    transition: .5s;
+}
+.step_2:hover{
+    transform: scale(1.1);
+    background: #48DBFB;
+}
+.step_3{
+    width: 120px;
+    height: 50px;
+    background: #000;
+    color: white;
+    line-height: 50px;
+    display: inline-block;
+    font-weight: bold;
+    transition: .5s;
+    transform: rotate(30deg);
+    position: relative;
+    left: 200px;
+}
+.step_3:hover{
+    transform: rotate(0deg);
+    background: #48DBFB;
+}
+.footer{
+    background: grey;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.footer p{
+    font-weight: bold;
+    font-size: 20px;
+}
